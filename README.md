@@ -1,12 +1,67 @@
-# React + Vite
+# 🚀 Landing Page - Ofiteca  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **landing page** desarrollada para **Ofiteca**, con el objetivo de presentar información de contacto y permitir a los usuarios enviar mensajes a través de un formulario.  
 
-Currently, two official plugins are available:
+## 🏗️ Tecnologías utilizadas  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite + React** ⚛️  
+- **Tailwind CSS** 🎨  
+- **React Icons** 🔥  
 
-## Expanding the ESLint configuration
+## 📂 Estructura del proyecto  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ofiteca-landing/
+│── src/
+│   ├── assets/              # Imágenes e isotipo
+│   ├── components/          # Componentes reutilizables
+│   ├── pages/               # Secciones principales
+│   ├── styles/              # Archivos de estilos
+│   ├── main.jsx             # Archivo principal de React
+│── public/
+│   ├── index.html           # Página base
+│── package.json             # Dependencias y scripts
+│── tailwind.config.js       # Configuración de Tailwind
+│── vite.config.js           # Configuración de Vite
+│── README.md                # Este archivo
+
+🔧 Instalación y configuración
+
+1. Clonar el repositorio
+   
+  git clone https://github.com/SARAM0910/OFITECA.git
+  cd OFITECA
+
+2. Instalar dependencias
+   npm run dev
+   
+3. Ejecutar el servidor de desarrollo
+   npm run dev
+
+4.Compilar para producción
+  npm run build
+
+📩 Funcionalidades
+✅ Formulario de contacto con validaciones en tiempo real.
+✅ Google Maps integrado con la ubicación de la empresa.
+✅ Diseño responsivo para móviles y escritorio.
+✅ SEO optimizado y con isotipo en la pestaña del navegador.
+
+🚀 Despliegue en producción
+Para hacer el despliegue en producción, puedes usar Vercel, Netlify o GitHub Pages:
+
+1. En Vercel:
+npm install -g vercel
+vercel
+
+2.En Netlify:
+Subir la carpeta /dist generada con npm run build.
+
+3. En GitHub Pages:
+npm install -g gh-pages
+npm run build
+gh-pages -d dist
+
+📞 Contacto
+Si tienes dudas o sugerencias, contáctame en saramarulanda12@gmail.com.
+
+🔹 Desarrollado con ❤️ por Sara Marulanda 🚀

@@ -3,22 +3,37 @@ import img1 from "../assets/images/Incendios.png";
 import img2 from "../assets/images/EneRenov.png";
 import img3 from "../assets/images/Aguas.png";
 import img4 from "../assets/images/Ventilacion.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const images = [img1, img2, img3, img4];
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    // Cambia la imagen cada 2 segundos automáticamente
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 2000);
-
     return () => clearInterval(interval);
-  }, [currentIndex]); // Se ejecuta cada vez que cambia la imagen
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if (location.state?.scrollToContact) {
+      setTimeout(() => {
+        smoothScrollToSection("contact");
+      }, 800); // Aumentamos el delay para mejorar la transición
+    }
+  }, [location]);
+
+  const smoothScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
+    }
+  };
 
   return (
     <section id="home" className="w-full pt-24 bg-white relative">
@@ -40,21 +55,21 @@ const HomePage = () => {
             Sistemas Contra Incendios • Instalaciones Eléctricas y Fontanería
           </p>
           <div className="mt-6 flex gap-4">
-          <button
+            <button
               className="px-6 py-3 bg-[#18A999] text-white text-lg font-semibold rounded-lg hover:bg-[#117f76] transition duration-300"
               onClick={() => navigate("/about")}
             >
               Sobre Nosotros
             </button>
             <button
-              className="px-6 py-3 bg-[#feb108] text-white text-lg font-semibold rounded-lg  hover:bg-yellow-600 transition duration-300"
-              onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+              className="px-6 py-3 bg-[#feb108] text-white text-lg font-semibold rounded-lg hover:bg-yellow-600 transition duration-300"
+              onClick={() => smoothScrollToSection("contact")}
             >
               Contáctanos
             </button>
             <button
               className="px-6 py-3 bg-[#18A999] text-white text-lg font-semibold rounded-lg hover:bg-[#117f76] transition duration-300"
-              onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
+              onClick={() => smoothScrollToSection("projects")}
             >
               Ver Proyectos
             </button>

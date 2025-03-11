@@ -85,7 +85,7 @@ const Navbar = () => {
 
       {/* Menú desplegable móvil */}
       {menuOpen && (
-        <ul className="absolute top-20 left-0 w-full bg-[#033f63] text-center md:hidden text-xl font-semibold py-4">
+        <ul className="absolute top-20 left-0 w-full bg-[#18A999] text-center md:hidden text-xl font-semibold py-4">
           {[
             { name: "Inicio", href: "#home" },
             { name: "Proyectos", href: "#projects" },

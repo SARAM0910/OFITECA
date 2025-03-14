@@ -42,11 +42,13 @@ function HomePageWithScroll() {
 function App() {
   return (
     <Router>
+      <div className="bg-white min-h-screen">
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<HomePageWithScroll />} />
       </Routes>
+      </div>
     </Router>
   );
 }

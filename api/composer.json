@@ -1,0 +1,20 @@
+{
+    "name": "ofiteca/api",
+    "description": "Backend API para el sistema de Ofiteca.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ofiteca\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SARAM0910",
+            "email": "saramarulanda12@gmail.com"
+        }
+    ],
+    "require": {
+          "vlucas/phpdotenv": "^5.6",
+    "phpmailer/phpmailer": "^6.8"
+    }
+}

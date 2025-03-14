@@ -45,7 +45,7 @@ const Footer = () => {
           {/* Enlaces de Navegación */}
           <nav className="flex justify-center gap-6 text-xs mb-4">
             <a href="#home" className="hover:text-[#feb108] transition">Inicio</a>
-            <a href="#about" className="hover:text-[#feb108] transition">Sobre Nosotros</a>
+            <a onClick={"/about"} className="hover:text-[#feb108] transition">Sobre Nosotros</a>
             <a href="#services" className="hover:text-[#feb108] transition">Servicios</a>
             <a href="#contact" className="hover:text-[#feb108] transition">Contacto</a>
           </nav>

@@ -29,7 +29,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviciosData.map((servicio, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-[270px]">
-              <img src={servicio.imagen} alt={servicio.titulo} className="w-full h-40 object-cover" />
+              <img src={servicio.imagen} loading="lazy" alt={servicio.titulo} className="w-full h-40 object-cover" />
               
               <div className="p-4 flex flex-col flex-grow">
                 {/* Título ajustado más arriba */}

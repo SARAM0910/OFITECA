@@ -9,7 +9,7 @@ const Results = () => {
         backgroundImage: `url(${fondoResultados})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }}
+      }} 
     >
       {/* Capa de opacidad y filtro amarillo más suave */}
       <div className="absolute inset-0 bg-[#feb10860]"></div>

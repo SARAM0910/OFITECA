@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-1">
           <img
-            src={logo}
+            src={logo} loading="lazy"
             alt="Logo Ofiteca"
             className="h-32 w-auto cursor-pointer drop-shadow-lg ml-6"
             onClick={scrollToHome}

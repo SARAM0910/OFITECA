@@ -35,7 +35,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center mb-5 mt-5 h-auto px-6">
         <div className="bg-[#4B4B4B50] p-8 rounded-lg">
           {/* Logo más grande */}
-          <img src={logo} alt="Logo Ofiteca"className="mt-2 mx-auto w-96 md:w-96 drop-shadow-[4px_4px_10px_rgba(255,255,255,0.8)]" />
+          <img src={logo} loading="lazy" alt="Logo Ofiteca"className="mt-2 mx-auto w-96 md:w-96 drop-shadow-[4px_4px_10px_rgba(255,255,255,0.8)]" />
 
           {/* Texto central */}
           <h1 className="text-3xl md:text-4xl font-bold leading-tight mt-0">

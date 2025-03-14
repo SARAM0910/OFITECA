@@ -63,7 +63,7 @@ const About = () => {
             <div className="w-full md:w-1/2 lg:w-7/12 flex justify-center">
               <div className="relative w-full max-w-[550px] border-4 border-[#FEB108] rounded-3xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-105">
                 <img
-                  src={section.image}
+                  src={section.image} 
                   alt={section.title}
                   className="w-full h-auto object-cover rounded-3xl"
                 />

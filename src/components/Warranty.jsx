@@ -18,7 +18,7 @@ const Primary = () => {
               {/* Círculo amarillo detrás */}
               <div className="absolute w-20 h-20 bg-[#feb10850] rounded-full left-0"></div>
               {/* Imagen alineada con el título */}
-              <img src={proyectoImg} alt="Proyecto" className="w-20 h-20 object-cover rounded-full relative z-10" />
+              <img src={proyectoImg} loading="lazy" alt="Proyecto" className="w-20 h-20 object-cover rounded-full relative z-10" />
               <h3 className="text-xl font-semibold text-gray-800 z-10">Proyecto</h3>
             </div>
             <p className="text-gray-700 text-justify">
@@ -33,7 +33,7 @@ const Primary = () => {
               {/* Círculo amarillo detrás */}
               <div className="absolute w-20 h-20 bg-[#feb10850] rounded-full left-0"></div>
               {/* Imagen alineada con el título */}
-              <img src={obraImg} alt="Obra e Instalaciones" className="w-20 h-20 object-cover rounded-full relative z-10" />
+              <img src={obraImg} loading="lazy" alt="Obra e Instalaciones" className="w-20 h-20 object-cover rounded-full relative z-10" />
               <h3 className="text-xl font-semibold text-gray-800 z-10">Obra e Instalaciones</h3>
             </div>
             <p className="text-gray-700 text-justify">
@@ -48,7 +48,7 @@ const Primary = () => {
               {/* Círculo amarillo detrás */}
               <div className="absolute w-20 h-20 bg-[#feb10850] rounded-full left-0"></div>
               {/* Imagen alineada con el título */}
-              <img src={mantenimientoImg} alt="Mantenimiento" className="w-20 h-20 object-cover rounded-full relative z-10" />
+              <img src={mantenimientoImg} loading="lazy" alt="Mantenimiento" className="w-20 h-20 object-cover rounded-full relative z-10" />
               <h3 className="text-xl font-semibold text-gray-800 z-10">Mantenimiento</h3>
             </div>
             <p className="text-gray-700 text-justify">
